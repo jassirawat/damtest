@@ -1,0 +1,204 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/banner.json",
+  "title": "Hero Type Banner 1",
+  "description": "Hero banner containing background image, heading text, body text and one call to action.",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "propertyOrder": [
+                    "backgroundImage",
+                    "headingText",
+                    "headingTextAlignment",
+                    "bodyText",
+                    "bodyTextAlignment",
+                    "callToAction1Text",
+                    "callToAction1Uri"
+                  ],
+  "type": "object",
+  "properties": {
+    "headingText" : {
+      "allOf": [
+        {
+        "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+        },
+        {
+          "properties": {
+            "values" :{
+              "items" :{
+                "properties" : {
+                  "backgroundImage": {
+                    "type": "object",
+                    "title": "background Image",
+                    "description": "background image of banner",
+                    "allOf": [
+                      {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+                      }
+                    ]
+                  },
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "headingText" : {
+      "allOf": [
+        {
+        "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+        },
+        {
+          "properties": {
+            "values" :{
+              "items" :{
+                "properties" : {
+                  "value": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 100,
+                    "format":"text",
+                    "title":"Banner heading",
+                    "description":"Heading of the banner",
+                  },
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "headingTextAlignment" : {
+      "allOf": [
+        {
+        "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+        },
+        {
+          "properties": {
+            "values" :{
+              "items" :{
+                "properties" : {
+                  "value": {
+                    "type": "string",
+                    "title": "Heading text alignment",
+                    "description": "Heading text alignment",
+                    "enum": [
+                      "Left",
+                      "Right"
+                      "Center"
+                    ]
+                  },
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "bodyText" : {
+      "allOf": [
+        {
+        "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+        },
+        {
+          "properties": {
+            "values" :{
+              "items" :{
+                "properties" : {
+                  "value": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 100,
+                    "format":"text",
+                    "title":"Banner body text",
+                    "description":"Body text of the banner",
+                  },
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "bodyTextAlignment" : {
+      "allOf": [
+        {
+        "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+        },
+        {
+          "properties": {
+            "values" :{
+              "items" :{
+                "properties" : {
+                  "value": {
+                    "type": "string",
+                    "title": "Body text alignment",
+                    "description": "Heading text alignment",
+                    "enum": [
+                      "Left",
+                      "Right"
+                      "Center"
+                    ]
+                  },
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "callToAction1Text" : {
+      "allOf": [
+        {
+        "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+        },
+        {
+          "properties": {
+            "values" :{
+              "items" :{
+                "properties" : {
+                  "value": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 100,
+                    "format":"text",
+                    "title":"CTA text",
+                    "description":"Call to action text",
+                  },
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "callToAction1Uri" : {
+      "allOf": [
+        {
+        "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+        },
+        {
+          "properties": {
+            "values" :{
+              "items" :{
+                "properties" : {
+                  "value": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 100,
+                    "format":"uri",
+                    "title":"CTA URI",
+                    "description":"Call to action URI",
+                  },
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+  }
+}

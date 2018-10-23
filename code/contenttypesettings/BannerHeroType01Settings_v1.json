@@ -1,0 +1,17 @@
+{
+  "contentTypeUri": "https://s3-eu-west-1.amazonaws.com/amp-product/tutorials/dynamiccontenttutorials/newtutorialbanner.json",
+  "settings": {
+    "name": "Banner - Hero Type 01",
+    "label": "Banner - Hero Type 01",
+    "icons": [
+      {
+        "size": 256,
+        "url": "https://apps.dev-artifacts.adis.ws/cms-icons/master/latest/256/ca-types-default.png"
+      }
+    ],
+    "visualizations": [
+    ],
+    "cards": [
+    ]
+  }
+}
