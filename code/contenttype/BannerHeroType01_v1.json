@@ -19,7 +19,7 @@
                   ],
   "type": "object",
   "properties": {
-    "headingText" : {
+    "backgroundImage" : {
       "allOf": [
         {
         "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
@@ -29,7 +29,7 @@
             "values" :{
               "items" :{
                 "properties" : {
-                  "backgroundImage": {
+                  "value": {
                     "type": "object",
                     "title": "background Image",
                     "description": "background image of banner",
@@ -38,7 +38,7 @@
                         "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
                       }
                     ]
-                  },
+                  }
                 }
               }
             }
@@ -62,8 +62,8 @@
                     "maxLength": 100,
                     "format":"text",
                     "title":"Banner heading",
-                    "description":"Heading of the banner",
-                  },
+                    "description":"Heading of the banner"
+                  }
                 }
               }
             }
@@ -87,10 +87,10 @@
                     "description": "Heading text alignment",
                     "enum": [
                       "Left",
-                      "Right"
+                      "Right",
                       "Center"
                     ]
-                  },
+                  }
                 }
               }
             }
@@ -114,8 +114,8 @@
                     "maxLength": 100,
                     "format":"text",
                     "title":"Banner body text",
-                    "description":"Body text of the banner",
-                  },
+                    "description":"Body text of the banner"
+                  }
                 }
               }
             }
@@ -139,10 +139,10 @@
                     "description": "Heading text alignment",
                     "enum": [
                       "Left",
-                      "Right"
+                      "Right",
                       "Center"
                     ]
-                  },
+                  }
                 }
               }
             }
@@ -166,8 +166,8 @@
                     "maxLength": 100,
                     "format":"text",
                     "title":"CTA text",
-                    "description":"Call to action text",
-                  },
+                    "description":"Call to action text"
+                  }
                 }
               }
             }
@@ -191,14 +191,14 @@
                     "maxLength": 100,
                     "format":"uri",
                     "title":"CTA URI",
-                    "description":"Call to action URI",
-                  },
+                    "description":"Call to action URI"
+                  }
                 }
               }
             }
           }
         }
       ]
-    },
+    }
   }
 }
