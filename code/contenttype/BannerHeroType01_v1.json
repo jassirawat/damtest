@@ -52,18 +52,16 @@
 										"type": "string",
 										"minLength": 1,
 										"maxLength": 100,
-										"format": "text"
+										"format": "text",
+                    "title": "Banner heading",
+              			"description": "Heading of the banner"                    
 									}
 								}
 							}
 						}
 					}
 				}
-			],
-      "minLength": 1,
-      "maxLength": 100,
-			"title": "Banner heading",
-			"description": "Heading of the banner"
+			]
 		},
 		"bodyText": {
 			"allOf": [{
