@@ -16,7 +16,7 @@
   "required": [
 		"headingText",
 		"bodyText",
-    "bannerAlignment",
+    "bannerAlignment"
 	],
 	"type": "object",
 	"properties": {
