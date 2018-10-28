@@ -26,9 +26,14 @@
 								"properties": {
 									"value": {
 										"type": "object",
-										"allOf": [{
-											"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
-										}]
+                    "anyOf": [
+                      {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+                      },
+                      {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/video-link"
+                      }
+                    ]
 									}
 								}
 							}
@@ -54,7 +59,7 @@
 										"maxLength": 100,
 										"format": "text",
                     "title": "Banner heading",
-              			"description": "Heading of the banner"                    
+              			"description": "Heading of the banner"
 									}
 								}
 							}
