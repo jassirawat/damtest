@@ -1,7 +1,7 @@
 {
 	"$schema": "http://bigcontent.io/cms/schema/v1/schema#",
 	"id": "https://raw.githubusercontent.com/jassirawat/damtest/master/code/contenttype/BannerHeroType01_v1.json",
-	"title": "Hero Type Banner 1",
+	"title": "Hero Type Banner",
 	"description": "Hero banner containing background image, heading text, body text and one call to action.",
 	"allOf": [{
 		"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -11,7 +11,6 @@
 		"headingText",
 		"bodyText",
     "bannerAlignment",
-    "callToAction",
 		"callToActions"
 	],
 	"type": "object",

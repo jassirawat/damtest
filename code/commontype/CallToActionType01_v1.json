@@ -1,8 +1,8 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "https://raw.githubusercontent.com/jassirawat/damtest/master/code/commontype/CallToActionType01_v1.json",
-  "title": "Call to action type 1",
-  "description": "Call to action content type which is used internally with other content type.",
+  "title": "Call to action",
+  "description": "Call to action content which is used internally with other content type.",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
