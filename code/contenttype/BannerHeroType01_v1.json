@@ -126,7 +126,7 @@
                 "title": "CTA",
                 "enum": [
                   {
-                    "$ref":"https://raw.githubusercontent.com/jassirawat/damtest/master/code/commontype/CallToActionType01_v1.json"
+                    "$ref": "https://raw.githubusercontent.com/jassirawat/damtest/master/code/commontype/CallToActionType01_v1.json"
                   }
                 ]
               }
