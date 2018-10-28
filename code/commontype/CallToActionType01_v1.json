@@ -65,32 +65,15 @@
       "title":"CTA URI",
       "description":"Call to action URI"
     },
-    "callToActionType" : {
-      "allOf": [
-        {
-        "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
-        },
-        {
-          "properties": {
-            "values" :{
-              "items" :{
-                "properties" : {
-                  "value": {
-                    "type": "string",
-                    "enum": [
-                      "Yellow",
-                      "Blue",
-                      "Arrow"
-                    ]
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
+    "callToActionType": {
+      "type": "string",
       "title":"CTA Type",
-      "description":"Call to action type"
+      "description":"Call to action type",
+      "enum": [
+        "Yellow",
+        "Blue",
+        "Arrow"
+      ]
     }
   }
 }
