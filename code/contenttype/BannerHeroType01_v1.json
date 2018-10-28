@@ -55,7 +55,7 @@
 								"properties": {
 									"value": {
 										"type": "string",
-										"minLength": 5,
+										"minLength": 1,
 										"maxLength": 100,
 										"format": "text",
                     "title": "Banner heading",
@@ -128,5 +128,11 @@
       "title": "CTAs",
       "description": "Call to actions"
     }
-	}
+	},
+  "required": [
+    "backgroundImage",
+    "headingText",
+    "bodyText",
+    "bannerAlignment"
+  ]
 }
