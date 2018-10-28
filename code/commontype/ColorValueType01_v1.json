@@ -1,0 +1,22 @@
+{
+   "$schema":"http://bigcontent.io/cms/schema/v1/schema#",
+   "id":"https://s3-eu-west-1.amazonaws.com/amp-product/tutorials/dynamiccontenttutorials/colorvalue.json",
+   "title":"color value.json",
+   "description":"Color for the banner background",
+   "type":"object",
+   "allOf":[
+      {
+         "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+      }
+   ],
+   "properties":{
+      "hex":{
+         "type":"string",
+         "description":"Enter the color value for the banner"
+      },
+      "friendlyName":{
+         "type":"string",
+         "description":"Color name"
+      }
+   }
+}
