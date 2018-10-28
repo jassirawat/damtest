@@ -9,8 +9,8 @@
 	"propertyOrder": [
 		"backgroundImage",
 		"headingText",
-		"bannerAlignment",
 		"bodyText",
+    "bannerAlignment",
 		"callToActions"
 	],
 	"type": "object",
@@ -112,7 +112,7 @@
 			],
 			"title": "Banner alignment",
 			"description": "Banner text alignment"
-		},    
+		},
     "callToActions": {
       "type": "array",
       "items": {
