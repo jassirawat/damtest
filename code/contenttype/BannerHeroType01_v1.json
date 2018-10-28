@@ -115,43 +115,31 @@
 			"title": "Banner body text",
 			"description": "Body text of the banner"
 		},
-    "callToActions":{
-       "allOf":[
+    "callToActions": {
+      "type": "array",
+      "items": {
+        "allOf": [
           {
-             "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
           },
           {
-             "properties":{
-                "values":{
-                   "items":{
-                      "properties":{
-                         "value":{
-                            "title":"CTA",
-                            "description":"Call to action",
-                            "type":"object",
-                            "allOf":[
-                               {
-                                  "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
-                               },
-                               {
-                                  "properties":{
-                                     "contentType":{
-                                        "enum":[
-                                            {
-                                             "ref":"https://raw.githubusercontent.com/jassirawat/damtest/master/code/commontype/CallToActionType01_v1.json"
-                                           }
-                                        ]
-                                     }
-                                  }
-                               }
-                            ]
-                         }
-                      }
-                   }
-                }
-             }
+            "properties": {
+              "contentType": {
+                "title": "Carousel Slides",
+                "enum": [
+                  {
+                    "ref":"https://raw.githubusercontent.com/jassirawat/damtest/master/code/commontype/CallToActionType01_v1.json"
+                  }
+                ]
+              }
+            }
           }
-       ]
+        ],
+        "minItems": 0,
+        "maxItems": 3,
+        "title":"CTA",
+        "description":"Call to action",
+      }
     }
 	}
 }
