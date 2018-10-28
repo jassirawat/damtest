@@ -114,51 +114,15 @@
 			"title": "Banner alignment",
 			"description": "Banner text alignment"
 		},
-    "callToAction": {
-      "title": "Call to action button",
-      "description": "add button",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "https://raw.githubusercontent.com/jassirawat/damtest/master/code/commontype/CallToActionType01_v1.json"
-        }
-      ]
-    },
     "callToActions": {
       "type": "array",
-      "title": "CTAs",
-      "description": "Call to actions",
       "items": {
         "$ref": "https://raw.githubusercontent.com/jassirawat/damtest/master/code/commontype/CallToActionType01_v1.json"
       },
       "minItems": 0,
-      "maxItems": 3
-    },
-    "callToActions11": {
-      "type": "array",
-      "items": {
-        "allOf": [
-          {
-            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
-          },
-          {
-            "properties": {
-              "contentType": {
-                "title": "CTA",
-                "enum": [
-                  {
-                    "$ref": "https://raw.githubusercontent.com/jassirawat/damtest/master/code/commontype/CallToActionType01_v1.json"
-                  }
-                ]
-              }
-            }
-          }
-        ],
-        "minItems": 1,
-        "maxItems": 3,
-        "title": "CTAs",
-        "description": "Call to actions"
-      }
+      "maxItems": 3,
+      "title": "CTAs",
+      "description": "Call to actions"
     }
 	}
 }
