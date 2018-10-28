@@ -60,6 +60,8 @@
 					}
 				}
 			],
+      "minLength": 1,
+      "maxLength": 100,
 			"title": "Banner heading",
 			"description": "Heading of the banner"
 		},
