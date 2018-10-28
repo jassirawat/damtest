@@ -66,10 +66,12 @@
                     "title": "Banner heading",
               			"description": "Heading of the banner"
 									}
-								}
+								},
+                "required": ["value"]
 							}
 						}
-					}
+					},
+          "required": ["values"]
 				}
 			]
 		},
