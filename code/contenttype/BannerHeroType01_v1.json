@@ -130,7 +130,6 @@
     }
 	},
   "required": [
-    "backgroundImage",
     "headingText",
     "bodyText",
     "bannerAlignment"
