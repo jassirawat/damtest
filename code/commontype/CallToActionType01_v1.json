@@ -1,0 +1,96 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://raw.githubusercontent.com/jassirawat/damtest/master/code/contenttype/CallToActionType01_v1.json",
+  "title": "Call to action type 1",
+  "description": "Call to action content type which is used internally with other content type.",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "propertyOrder": [
+                    "callToActionText",
+                    "callToActionUri",
+                    "callToActionType"
+                  ],
+  "type": "object",
+  "properties": {
+    "callToActionText" : {
+      "allOf": [
+        {
+        "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+        },
+        {
+          "properties": {
+            "values" :{
+              "items" :{
+                "properties" : {
+                  "value": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 100,
+                    "format":"text"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title":"CTA text",
+      "description":"Call to action text"
+    },
+    "callToActionUri" : {
+      "allOf": [
+        {
+        "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+        },
+        {
+          "properties": {
+            "values" :{
+              "items" :{
+                "properties" : {
+                  "value": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 500,
+                    "format":"uri"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title":"CTA URI",
+      "description":"Call to action URI"
+    },
+    "callToActionType" : {
+      "allOf": [
+        {
+        "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+        },
+        {
+          "properties": {
+            "values" :{
+              "items" :{
+                "properties" : {
+                  "value": {
+                    "type": "string",
+                    "enum": [
+                      "Yellow",
+                      "Blue",
+                      "Arrow"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title":"CTA Type",
+      "description":"Call to action type"
+    }
+  }
+}
