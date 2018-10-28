@@ -115,31 +115,41 @@
 			"title": "Banner body text",
 			"description": "Body text of the banner"
 		},
-		"callToActions": {
-			"allOf": [{
-					"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
-				},
-        {
-        "$ref": "https://raw.githubusercontent.com/jassirawat/damtest/master/code/commontype/CallToActionType01_v1.json"
-        },
-				{
-					"properties": {
-						"values": {
-							"items": {
-								"properties": {
-									"value": {
-										"type": "array",
-										"minItems": 0,
-										"maxItems": 3
-									}
-								}
-							}
-						}
-					}
-				}
-			],
-			"title": "CTAs",
-			"description": "Call to actions"
-		}
+    "callToActions":{
+       "allOf":[
+          {
+             "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+          },
+          {
+             "properties":{
+                "values":{
+                   "items":{
+                      "properties":{
+                         "value":{
+                            "title":"CTA",
+                            "description":"Call to action",
+                            "type":"object",
+                            "allOf":[
+                               {
+                                  "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                               },
+                               {
+                                  "properties":{
+                                     "contentType":{
+                                        "enum":[
+                                           "https://raw.githubusercontent.com/jassirawat/damtest/master/code/commontype/CallToActionType01_v1.json"
+                                        ]
+                                     }
+                                  }
+                               }
+                            ]
+                         }
+                      }
+                   }
+                }
+             }
+          }
+       ]
+    }
 	}
 }
