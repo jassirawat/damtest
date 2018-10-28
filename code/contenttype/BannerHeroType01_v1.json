@@ -123,23 +123,29 @@
       "title":"Banner body text",
       "description":"Body text of the banner"
     },
-    "bodyTextAlignment" : {
+    "callToActions" : {
       "allOf": [
         {
         "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
-        },
+      },
         {
           "properties": {
             "values" :{
               "items" :{
                 "properties" : {
                   "value": {
-                    "type": "string",
-                    "enum": [
-                      "Left",
-                      "Right",
-                      "Center"
-                    ]
+                    "type": "array",
+                    "title": "CTA",
+                    "description": "Call to actions",
+                    "items": {
+                      "allOf": [
+                        {
+                          "$ref": "https://raw.githubusercontent.com/jassirawat/damtest/master/code/commontype/CallToActionType01_v1.json"
+                        }
+                      ]
+                    },
+                    "minItems": 0,
+                    "maxItems": 3
                   }
                 }
               }
@@ -147,58 +153,8 @@
           }
         }
       ],
-      "title": "Body text alignment",
-      "description": "Heading text alignment"
-    },
-    "callToAction1Text" : {
-      "allOf": [
-        {
-        "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
-        },
-        {
-          "properties": {
-            "values" :{
-              "items" :{
-                "properties" : {
-                  "value": {
-                    "type": "string",
-                    "minLength": 1,
-                    "maxLength": 100,
-                    "format":"text"
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "title":"CTA text",
-      "description":"Call to action text"
-    },
-    "callToAction1Uri" : {
-      "allOf": [
-        {
-        "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
-        },
-        {
-          "properties": {
-            "values" :{
-              "items" :{
-                "properties" : {
-                  "value": {
-                    "type": "string",
-                    "minLength": 1,
-                    "maxLength": 100,
-                    "format":"uri"
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "title":"CTA URI",
-      "description":"Call to action URI"
+      "title":"CTAs",
+      "description":"Call to actions"
     }
   }
 }
