@@ -123,7 +123,7 @@
           {
             "properties": {
               "contentType": {
-                "title": "CTAs",
+                "title": "CTA",
                 "enum": [
                   {
                     "$ref":"https://raw.githubusercontent.com/jassirawat/damtest/master/code/commontype/CallToActionType01_v1.json"
@@ -135,8 +135,8 @@
         ],
         "minItems": 0,
         "maxItems": 3,
-        "title":"CTA",
-        "description":"Call to action"
+        "title":"CTAs",
+        "description":"Call to actions"
       }
     }
 	}
