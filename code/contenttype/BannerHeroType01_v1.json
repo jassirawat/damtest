@@ -18,6 +18,7 @@
 		"bodyText",
     "bannerAlignment"
 	],
+  "additionalProperties": false,
 	"type": "object",
 	"properties": {
 		"backgroundImage": {
