@@ -133,7 +133,7 @@
             }
           }
         ],
-        "minItems": 0,
+        "minItems": 1,
         "maxItems": 3,
         "title":"CTAs",
         "description":"Call to actions"
