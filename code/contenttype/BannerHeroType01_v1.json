@@ -9,11 +9,9 @@
 	"propertyOrder": [
 		"backgroundImage",
 		"headingText",
-		"headingTextAlignment",
+		"bannerAlignment",
 		"bodyText",
-		"bodyTextAlignment",
-		"callToAction1Text",
-		"callToAction1Uri"
+		"callToActions"
 	],
 	"type": "object",
 	"properties": {
@@ -65,32 +63,6 @@
 			"title": "Banner heading",
 			"description": "Heading of the banner"
 		},
-		"headingTextAlignment": {
-			"allOf": [{
-					"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
-				},
-				{
-					"properties": {
-						"values": {
-							"items": {
-								"properties": {
-									"value": {
-										"type": "string",
-										"enum": [
-											"Left",
-											"Right",
-											"Center"
-										]
-									}
-								}
-							}
-						}
-					}
-				}
-			],
-			"title": "Heading text alignment",
-			"description": "Heading text alignment"
-		},
 		"bodyText": {
 			"allOf": [{
 					"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
@@ -115,6 +87,32 @@
 			"title": "Banner body text",
 			"description": "Body text of the banner"
 		},
+    "bannerAlignment": {
+			"allOf": [{
+					"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+				},
+				{
+					"properties": {
+						"values": {
+							"items": {
+								"properties": {
+									"value": {
+										"type": "string",
+										"enum": [
+											"Left",
+											"Right",
+											"Center"
+										]
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"title": "Banner alignment",
+			"description": "Banner text alignment"
+		},    
     "callToActions": {
       "type": "array",
       "items": {
