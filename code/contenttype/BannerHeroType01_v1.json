@@ -35,7 +35,8 @@
                       }
                     ]
 									}
-								}
+								},
+                "required": ["value"]
 							}
 						}
 					}
@@ -61,7 +62,8 @@
                     "title": "Banner heading",
               			"description": "Heading of the banner"
 									}
-								}
+								},
+                "required": ["value"]
 							}
 						}
 					}
@@ -128,10 +130,5 @@
       "title": "CTAs",
       "description": "Call to actions"
     }
-	},
-  "required": [
-    "headingText",
-    "bodyText",
-    "bannerAlignment"
-  ]
+	}
 }
