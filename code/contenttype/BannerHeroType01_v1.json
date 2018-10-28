@@ -13,11 +13,6 @@
     "bannerAlignment",
 		"callToActions"
 	],
-  "required": [
-		"headingText",
-		"bodyText",
-    "bannerAlignment"
-	],
 	"type": "object",
 	"properties": {
 		"backgroundImage": {
