@@ -55,7 +55,7 @@
 								"properties": {
 									"value": {
 										"type": "string",
-										"minLength": 1,
+										"minLength": 5,
 										"maxLength": 100,
 										"format": "text",
                     "title": "Banner heading",
