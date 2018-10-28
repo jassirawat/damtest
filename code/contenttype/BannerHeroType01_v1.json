@@ -138,7 +138,7 @@
         "minItems": 0,
         "maxItems": 3,
         "title":"CTA",
-        "description":"Call to action",
+        "description":"Call to action"
       }
     }
 	}
