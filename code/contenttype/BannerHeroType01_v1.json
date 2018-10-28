@@ -1,158 +1,145 @@
 {
-  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/jassirawat/damtest/master/code/contenttype/BannerHeroType01_v1.json",
-  "title": "Hero Type Banner 1",
-  "description": "Hero banner containing background image, heading text, body text and one call to action.",
-  "allOf": [
-    {
-      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
-    }
-  ],
-  "propertyOrder": [
-                    "backgroundImage",
-                    "headingText",
-                    "headingTextAlignment",
-                    "bodyText",
-                    "bodyTextAlignment",
-                    "callToAction1Text",
-                    "callToAction1Uri"
-                  ],
-  "type": "object",
-  "properties": {
-    "backgroundImage" : {
-      "allOf": [
+	"$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+	"id": "https://raw.githubusercontent.com/jassirawat/damtest/master/code/contenttype/BannerHeroType01_v1.json",
+	"title": "Hero Type Banner 1",
+	"description": "Hero banner containing background image, heading text, body text and one call to action.",
+	"allOf": [{
+		"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+	}],
+	"propertyOrder": [
+		"backgroundImage",
+		"headingText",
+		"headingTextAlignment",
+		"bodyText",
+		"bodyTextAlignment",
+		"callToAction1Text",
+		"callToAction1Uri"
+	],
+	"type": "object",
+	"properties": {
+		"backgroundImage": {
+			"allOf": [{
+					"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+				},
+				{
+					"properties": {
+						"values": {
+							"items": {
+								"properties": {
+									"value": {
+										"type": "object",
+										"allOf": [{
+											"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+										}]
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"title": "Background Image",
+			"description": "Background image of banner"
+		},
+		"headingText": {
+			"allOf": [{
+					"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+				},
+				{
+					"properties": {
+						"values": {
+							"items": {
+								"properties": {
+									"value": {
+										"type": "string",
+										"minLength": 1,
+										"maxLength": 100,
+										"format": "text"
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"title": "Banner heading",
+			"description": "Heading of the banner"
+		},
+		"headingTextAlignment": {
+			"allOf": [{
+					"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+				},
+				{
+					"properties": {
+						"values": {
+							"items": {
+								"properties": {
+									"value": {
+										"type": "string",
+										"enum": [
+											"Left",
+											"Right",
+											"Center"
+										]
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"title": "Heading text alignment",
+			"description": "Heading text alignment"
+		},
+		"bodyText": {
+			"allOf": [{
+					"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+				},
+				{
+					"properties": {
+						"values": {
+							"items": {
+								"properties": {
+									"value": {
+										"type": "string",
+										"minLength": 1,
+										"maxLength": 100,
+										"format": "text"
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"title": "Banner body text",
+			"description": "Body text of the banner"
+		},
+		"callToActions": {
+			"allOf": [{
+					"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+				},
         {
-        "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+        "$ref": "https://raw.githubusercontent.com/jassirawat/damtest/master/code/commontype/CallToActionType01_v1.json"
         },
-        {
-          "properties": {
-            "values" :{
-              "items" :{
-                "properties" : {
-                  "value": {
-                    "type": "object",
-                    "allOf": [
-                      {
-                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
-                      }
-                    ]
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "title": "Background Image",
-      "description": "Background image of banner"
-    },
-    "headingText" : {
-      "allOf": [
-        {
-        "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
-        },
-        {
-          "properties": {
-            "values" :{
-              "items" :{
-                "properties" : {
-                  "value": {
-                    "type": "string",
-                    "minLength": 1,
-                    "maxLength": 100,
-                    "format":"text"
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "title":"Banner heading",
-      "description":"Heading of the banner"
-    },
-    "headingTextAlignment" : {
-      "allOf": [
-        {
-        "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
-        },
-        {
-          "properties": {
-            "values" :{
-              "items" :{
-                "properties" : {
-                  "value": {
-                    "type": "string",
-                    "enum": [
-                      "Left",
-                      "Right",
-                      "Center"
-                    ]
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "title": "Heading text alignment",
-      "description": "Heading text alignment"
-    },
-    "bodyText" : {
-      "allOf": [
-        {
-        "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
-        },
-        {
-          "properties": {
-            "values" :{
-              "items" :{
-                "properties" : {
-                  "value": {
-                    "type": "string",
-                    "minLength": 1,
-                    "maxLength": 100,
-                    "format":"text"
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "title":"Banner body text",
-      "description":"Body text of the banner"
-    },
-    "callToActions" : {
-      "allOf": [
-        {
-        "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
-      },
-        {
-          "properties": {
-            "values" :{
-              "items" :{
-                "properties" : {
-                  "value": {
-                    "type": "array",
-                    "items": {
-                      "allOf": [
-                        {
-                          "$ref": "https://raw.githubusercontent.com/jassirawat/damtest/master/code/commontype/CallToActionType01_v1.json"
-                        }
-                      ]
-                    },
-                    "minItems": 0,
-                    "maxItems": 3
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "title":"CTAs",
-      "description":"Call to actions"
-    }
-  }
+				{
+					"properties": {
+						"values": {
+							"items": {
+								"properties": {
+									"value": {
+										"type": "array",
+										"minItems": 0,
+										"maxItems": 3
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"title": "CTAs",
+			"description": "Call to actions"
+		}
+	}
 }
