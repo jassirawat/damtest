@@ -13,6 +13,11 @@
     "bannerAlignment",
 		"callToActions"
 	],
+  "required": [
+		"headingText",
+		"bodyText",
+    "bannerAlignment",
+	],
 	"type": "object",
 	"properties": {
 		"backgroundImage": {
@@ -35,9 +40,8 @@
                       }
                     ]
 									}
-								},
-                "required": ["value"]
-							}
+								}
+              }
 						}
 					}
 				}
@@ -62,8 +66,7 @@
                     "title": "Banner heading",
               			"description": "Heading of the banner"
 									}
-								},
-                "required": ["value"]
+								}
 							}
 						}
 					}
