@@ -135,8 +135,6 @@
                 "properties" : {
                   "value": {
                     "type": "array",
-                    "title": "CTA",
-                    "description": "Call to actions",
                     "items": {
                       "allOf": [
                         {
