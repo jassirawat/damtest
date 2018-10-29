@@ -1,7 +1,7 @@
 
 {
    "$schema":"http://bigcontent.io/cms/schema/v1/schema#",
-   "id":"https://s3-eu-west-1.amazonaws.com/amp-product/tutorials/dynamiccontenttutorials/localizedbannerchoosertest.json",
+   "id":"https://raw.githubusercontent.com/jassirawat/damtest/master/code/contenttype/SampleContentType.json",
    "title":"localised-link.json",
    "description":"Localized chooser test",
    "type":"object",
@@ -38,42 +38,6 @@
                                  },
                                  {
                                     "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/video-link"
-                                 }
-                              ]
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-         ]
-      },
-      "color":{
-         "allOf":[
-            {
-               "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
-            },
-            {
-               "properties":{
-                  "values":{
-                     "items":{
-                        "properties":{
-                           "value":{
-                              "title":"Color selector",
-                              "description":"The color of this banner",
-                              "type":"object",
-                              "allOf":[
-                                 {
-                                    "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
-                                 },
-                                 {
-                                    "properties":{
-                                       "contentType":{
-                                          "enum":[
-                                             "https://s3-eu-west-1.amazonaws.com/amp-product/tutorials/dynamiccontenttutorials/colorvalue.json"
-                                          ]
-                                       }
-                                    }
                                  }
                               ]
                            }
