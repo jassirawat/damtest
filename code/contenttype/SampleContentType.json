@@ -17,6 +17,7 @@
       "calltoactiontext",
       "calltoactionurl"
    ],
+   "required": ["headline"],
    "properties":{
       "background":{
          "allOf":[
