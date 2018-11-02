@@ -27,6 +27,7 @@
 				{
 					"properties": {
 						"values": {
+              "minItems": 2,
 							"items": {
 								"properties": {
 									"value": {
@@ -56,6 +57,7 @@
 				{
 					"properties": {
 						"values": {
+              "minItems": 2,
 							"items": {
 								"properties": {
 									"value": {
@@ -104,6 +106,7 @@
 				{
 					"properties": {
 						"values": {
+              "minItems": 2,
 							"items": {
 								"properties": {
 									"value": {
