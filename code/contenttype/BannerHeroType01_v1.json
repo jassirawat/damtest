@@ -47,7 +47,7 @@
 					}
 				}
 			],
-			"title": "Background Image",
+			"title": "Background Image (Required)",
 			"description": "Background image of banner"
 		},
 		"headingText": {
@@ -65,7 +65,7 @@
 										"minLength": 5,
 										"maxLength": 250,
 										"format": "text",
-                    "title": "Banner heading",
+                    "title": "Banner heading (Required)",
               			"description": "Heading of the banner"
 									}
 								}
@@ -123,7 +123,7 @@
 					}
 				}
 			],
-			"title": "Banner alignment",
+			"title": "Banner alignment (Required)",
 			"description": "Banner text alignment"
 		},
     "callToActions": {
